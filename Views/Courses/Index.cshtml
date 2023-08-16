@@ -13,6 +13,9 @@
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.CId)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.CName)
             </th>
             <th>
@@ -30,6 +33,9 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
+                <th>
+                @Html.DisplayFor(model => item.CId)
+                </th>
             <td>
                 @Html.DisplayFor(modelItem => item.CName)
             </td>
